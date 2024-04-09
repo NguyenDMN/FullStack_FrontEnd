@@ -1,0 +1,411 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.home a,
+input,
+button {
+  padding: .5em;
+  font-size: .9em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  border: solid 1px #ccc;
+  outline: none;
+}
+button {
+  color: white;
+  background: #4188dc;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  border-color: rgba(0,0,0, .1);
+}
+
+/* Header Component CSS */
+.navbar {
+  background-color: #333; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-size-adjust: auto;
+}
+
+.navbar header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar p {
+  margin-left: 20px; /* Adjust spacing between logo and text */
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  /* margin: 0; Reset margin */
+  margin-left: 15%;
+  flex-grow: 1; /* Allow the main-nav to grow and take up remaining space */
+  font-weight: bold;
+}
+
+.main-nav li {
+  margin-left: 5%; /* Adjust spacing between menu items */
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #fff; /* Set your desired text color */
+  transition: color 0.3s ease; /* Add transition effect for smoother hover */
+}
+
+.main-nav li a:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+#signUp {
+  margin-left: auto; /* Move the button to the right */
+}
+
+#signUp button {
+  background-color: #007bff; /* Set your desired button background color */
+  color: #fff; /* Set your desired button text color */
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect for smoother hover */
+}
+
+#signUp button:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+}
+
+
+/* Home Component CSS */
+
+.main-content.home {
+  text-align: center; /* Center align the content */
+  padding: 20px; /* Add padding as needed */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align horizontally */
+}
+
+.main-content.home h2 {
+  font-size: 24px; /* Set your desired font size */
+  margin-bottom: 20px; /* Add margin as needed */
+}
+
+.main-content.home hr {
+  border: 1px solid #ccc; /* Add border for separation */
+  margin-bottom: 20px; /* Add margin as needed */
+}
+
+.homemovingpic {
+  display: flex;
+  justify-content: center; /* Center align the images */
+}
+
+.homemovingpic img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  max-height: 300px; /* Set maximum height for images */
+  margin: 0 10px; /* Add margin between images */
+  transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+.homemovingpic img:not(:first-child) {
+  display: none; /* Hide all images except the first one */
+}
+
+
+.aboutus-container {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus {
+  max-width: 800px; /* Adjust max-width as needed */
+  text-align: left; /* Align text to the left */
+}
+
+
+
+/* Login Component CSS*/
+.main-content.Login {
+  text-align: center; /* Center align the content */
+  padding: 20px; /* Add padding as needed */
+}
+
+.main-content.Login h2 {
+  font-size: 24px; /* Set your desired font size */
+  margin-bottom: 20px; /* Add margin as needed */
+}
+
+.main-content.Login label {
+  font-weight: bold; /* Make labels bold */
+  text-decoration: underline; /* Add underline to labels */
+  display: inline-block; /* Display labels as inline-block to align with inputs */
+  margin-bottom: 5px; /* Add margin as needed */
+
+  width: 50%; /* Set width to ensure consistent alignment */
+}
+
+.main-content.Login input {
+  width: 50%; /* Set input width to 100% minus padding */
+  padding: 8px; /* Add padding as needed */
+  margin-bottom: 10px; /* Add margin as needed */
+  margin-left: 5dvb;
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-color: #fff; /* Set input background color */
+}
+
+.main-content.Login button {
+  background-color: #007bff; /* Set your desired button background color */
+  color: #fff; /* Set your desired button text color */
+  border: none;
+  padding: 10px 20px; /* Add padding as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect for smoother hover */
+  margin-bottom: 10px; /* Add margin as needed */
+}
+
+.main-content.Login button:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+}
+
+.main-content.Login a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Set your desired link color */
+}
+
+.main-content.Login a:hover {
+  text-decoration: underline; /* Underline link on hover */
+}
+
+
+/* css for the AllBG page*/
+.main-content {
+  padding: 20px;
+}
+
+.boardGameSummary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-left: 10%;
+}
+
+.displayBG {
+  text-align: center;
+  width: 250px; /* Set a fixed width for each item */
+}
+
+.displayBG img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Set a maximum height for the image */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+.displayBG p {
+  margin-bottom: 5px; /* Add some space below each paragraph */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-number {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.page-number.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+/* cart css*/
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.cart h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 10px;
+}
+
+.cart input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.cart button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #0056b3;
+}
+
+/* check out css*/
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.checkout {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+}
+
+.checkout h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.checkout ul {
+  list-style: none;
+  padding: 0;
+}
+
+.checkout li {
+  margin-bottom: 10px;
+}
+
+.checkout input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.checkout button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #0056b3;
+}
+
+/*User component css*/
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.user-content {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+}
+
+.user-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.user-content h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.user-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-content li {
+  margin-bottom: 10px;
+}
+
+.user-content p {
+  margin: 5px 0;
+}
+
+.logout-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Darker red color on hover */
+}
+
